@@ -25,9 +25,9 @@ export const ethioTelecomFixedLineRegex = [
   /^\+25111((11[1245]|12[3678]|13[124578]|14[23]|15[568]|16[268]|21[38]|23[678]|25[89]|27[05789]|28[234689]|32[01]|33[0134]|34[12489]|35[0134]|38[78]|41[69]|43[23489]|44[02389]|45[0569]|46[56789]|51[017]|54[4-8]|55[01234]|61[89]|62[6-9]|63[1245]|64[5-8]|66[5-8]|68[014-7]|69[0134]|70[0124578]|71[234]|72[34]|73[0124]|74[0-69]|77[012345678]|78[014689]))\d{4}$/,
 ]
 
-export function checkEthioTelecomFixedLine(phone: any, patterns: any) {
+export function checkEthioTelecomFixedLine(phone: string, patterns: Array<RegExp> ) {
   let found = false
-  patterns.forEach((pattern: any) => {
+  patterns.forEach((pattern: RegExp) => {
     if (pattern.test(phone))
       found = true
     else {
