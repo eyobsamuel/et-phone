@@ -4,7 +4,11 @@
   "description": "A phone validation npm package for Ethiopian Ethio-telecom and Safaricom numbers that takes any phone number and type of a phone numbers, and returns true when it is valid or false when it is invalid.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "type":"module",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eyobsamuel/et-phone.git"
+  },
   "files": [
     "dist",
     "LICENSE",
@@ -17,23 +21,14 @@
     "test:coverage": "jest --coverage"
   },
   "keywords": [
-    "et-phone",
     "et phone",
     "ethio phone",
-    "ethiopia phone",
-    "ethiopian phone",
-    "ethiopia phone number",
     "ethiopian phone number",
-    "et phone number validation",
-    "et phone number validator",
-    "ethiopian phone number validation",
     "ethio telecom",
     "safaricom",
-    "ethio telecom phone number",
-    "safaricom phone number",
+    "phone validator",
     "phone number validation",
-    "ethiopia",
-    "phone validator"
+    "ethiopia"
   ],
   "author": "Eyob Samuel (leeyoba@gmail.com)",
   "license": "ISC",
