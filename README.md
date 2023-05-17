@@ -32,50 +32,50 @@ import etPhone from 'et-phone';
 
 ## Examples
 
-<p>The default validation will include <b>mobile</b> and <b>fixed-line/ landline</b> phone numbers for Ethio-telecom and Safaricom-Ethiopia. </p
+<p>The default validation will include <b>mobile</b> and <b>fixed-line/ landline</b> phone numbers for Ethio-telecom and Safaricom-Ethiopia. </p>
 
  ```js
 etPhone("0911 23 45 67") 
-// {isValid: true, phoneNumber: "+251911234567", provider: "Ethio telecom", phoneType: "Mobile",}
+// { isValid: true, phoneNumber: "+251911234567", provider: "Ethio telecom", phoneType: "Mobile" }
 ```
  ```js
 etPhone("0711 23 45 67") 
-// {isValid: true, phoneNumber: "+251711234567", provider: "Safaricom", phoneType: "Mobile",}
+// { isValid: true, phoneNumber: "+251711234567", provider: "Safaricom", phoneType: "Mobile" }
 ```
  ```js
 etPhone("+251 911 23 45 67") 
-// {isValid: true, phoneNumber: "+251911234567", provider: "Ethio telecom", phoneType: "Mobile",}
+// { isValid: true, phoneNumber: "+251911234567", provider: "Ethio telecom", phoneType: "Mobile" }
 ```
  ```js
 etPhone("+251 711 23 45 67") 
-// {isValid: true, phoneNumber: "+251711234567", provider: "Safaricom", phoneType: "Mobile",}
+// { isValid: true, phoneNumber: "+251711234567", provider: "Safaricom", phoneType: "Mobile" }
 ```
  ```js
 etPhone("+(251) 911 23 45 67") 
-// {isValid: true, phoneNumber: "+251911234567", provider: "Ethio telecom", phoneType: "Mobile",}
+// { isValid: true, phoneNumber: "+251911234567", provider: "Ethio telecom", phoneType: "Mobile" }
 ```
  ```js
 etPhone("+(251) 711 23 45 67") 
-// {isValid: true, phoneNumber: "+251711234567", provider: "Safaricom", phoneType: "Mobile",}
+// { isValid: true, phoneNumber: "+251711234567", provider: "Safaricom", phoneType: "Mobile" }
 ```
  ```js
 etPhone("911234567") 
-// {isValid: true, phoneNumber: "+251711234567", provider: "Ethio telecom", phoneType: "Mobile",}
+// { isValid: true, phoneNumber: "+251711234567", provider: "Ethio telecom", phoneType: "Mobile" }
 ```
  ```js
 etPhone("711234567") 
-// {isValid: true, phoneNumber: "+251711234567", provider: "Safaricom", phoneType: "Mobile",}
+// { isValid: true, phoneNumber: "+251711234567", provider: "Safaricom", phoneType: "Mobile",}
 ```
  ```js
 etPhone(911234567) 
-// {isValid: true, phoneNumber: "+251711234567", provider: "Ethio telecom", phoneType: "Mobile",}
+// { isValid: true, phoneNumber: "+251711234567", provider: "Ethio telecom", phoneType: "Mobile" }
 ```
  ```js
 etPhone(711234567) 
-// {isValid: true, phoneNumber: "+251711234567", provider: "Safaricom", phoneType: "Mobile",}
+// { isValid: true, phoneNumber: "+251711234567", provider: "Safaricom", phoneType: "Mobile" }
 ```
 <br/>
-<p>You can also specify specific  phone number types: ["all" | "mobile" | "fixedLine" | "special" | "shortCode"] </p
+<p>You can also specify specific  phone number types: ["all" | "mobile" | "fixedLine" | "special" | "shortCode"] </p>
 
  ```js
 etPhone("0911234567", ["all"]) 
